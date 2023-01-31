@@ -9,8 +9,15 @@
 
 /* Pridėta CSS klasė output elementui su sukurtais P tagais */
 #output {
-  padding-left: 40%;
-  font-size: 2rem;
+  padding-left: 200px;
+  font-size: 3rem;
+}
+
+p {
+  border: 2px solid black;
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 1px;
 }
 
 /* Mobile first */
