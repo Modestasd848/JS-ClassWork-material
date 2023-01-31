@@ -9,7 +9,7 @@
 
 /* Pridėta CSS klasė output elementui su sukurtais P tagais */
 #output {
-  padding-left: 200px;
+  margin-left: 100px;
   font-size: 3rem;
 }
 
@@ -67,12 +67,11 @@ form {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .headline {
-    font-size: 3.5em;
+  #output {
+    padding-left: 100px;
   }
 
-  #search,
-  #submit-btn {
-    font-size: 2em;
+  p {
+    width: 70%;
   }
 }
