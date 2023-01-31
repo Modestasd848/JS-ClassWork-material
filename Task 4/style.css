@@ -7,6 +7,39 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
+/* Pridėtos klasės flex display bei scrollbar funkcija pagražint bendram vaizdui */
+.card {
+  background-color: rgb(219, 218, 218);
+  width: 19%;
+  padding: 20px 20px;
+  overflow-y: scroll;
+  height: 60vh;
+  margin: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: gray 3px 3px 8px 3px;
+}
+
+li {
+  list-style-type: none;
+  line-height: 1.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 171, 171);
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+}
+
 /* Mobile first */
 .wrapper {
   min-height: 100vh;
@@ -26,4 +59,22 @@
 .container h1 {
   margin-top: 50px;
   color: #333;
+}
+
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 29%;
+    padding: 20px 20px;
+    font-size: 1.5rem;
+  }
+
+  li {
+    line-height: 2.5rem;
+  }
 }
